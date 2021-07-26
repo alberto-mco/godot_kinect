@@ -1,0 +1,93 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://components/skeleton_point/SkeletonPoint.tscn" type="PackedScene" id=2]
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+
+[node name="btnSetElevation" type="Button" parent="."]
+margin_left = 11.0
+margin_top = 49.0
+margin_right = 128.0
+margin_bottom = 82.0
+text = "Set elevation"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSlider" type="HSlider" parent="."]
+margin_left = 12.0
+margin_top = 10.0
+margin_right = 127.0
+margin_bottom = 43.0
+min_value = -27.0
+max_value = 27.0
+tick_count = 27
+ticks_on_borders = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Skeleton" type="Node" parent="."]
+
+[node name="SkeletonPoint1" parent="Skeleton" instance=ExtResource( 2 )]
+
+[node name="SkeletonPoint2" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 1
+
+[node name="SkeletonPoint3" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 2
+
+[node name="SkeletonPoint4" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 3
+
+[node name="SkeletonPoint5" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 4
+
+[node name="SkeletonPoint6" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 5
+
+[node name="SkeletonPoint7" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 6
+
+[node name="SkeletonPoint8" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 7
+
+[node name="SkeletonPoint9" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 8
+
+[node name="SkeletonPoint10" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 9
+
+[node name="SkeletonPoint11" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 10
+
+[node name="SkeletonPoint12" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 11
+
+[node name="SkeletonPoint13" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 12
+
+[node name="SkeletonPoint14" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 13
+
+[node name="SkeletonPoint15" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 14
+
+[node name="SkeletonPoint16" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 15
+
+[node name="SkeletonPoint17" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 16
+
+[node name="SkeletonPoint18" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 17
+
+[node name="SkeletonPoint19" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 18
+
+[node name="SkeletonPoint20" parent="Skeleton" instance=ExtResource( 2 )]
+SkeletonPoint = 19
+
+[connection signal="pressed" from="btnSetElevation" to="." method="_on_btnSetElevation_pressed"]
